@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/capivara.ico" type="image/x-icon">
     <title>PostCapy</title>
 </head>
 <body>
+
+    <!-- header -->
+
     <header>
         <div class="header">
             <nav>
@@ -15,11 +19,11 @@
                     <h1>PostCapy</h1>
                 </div>
                 <ul class="abas">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Como funciona</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#somos">Quem somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fundadores">Fundadores</a></li>
                     </ul>   
-                    <button class="btn-nav">Baixe o App</button>
+
                     
                     <div class="mobile-menu-icon">
                         <button onclick="menuShow()"><img src="../img/menu_white_36dp.svg" alt=""></button>
@@ -27,17 +31,21 @@
                     </nav>
                     <div class="mobile-menu">
                     <ul>
-                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#somos">Quem somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#fundadores">Fundadores</a></li>
                     </ul>
                     
-                    <button class="btn-nav">Baixe o App</button>
+
                 </div>
         </div>
     </header>
 
+    <!-- main -->
+
     <main>
+
+        <!-- elementos da pimeira parte -->
         <div class="firsts-elements">
             <div class="text">
                 <h1>O lugar onde <br>
@@ -45,17 +53,17 @@
                     <span> valorizado </span>!!!</h1>
                 <h3>Venha fazer parte desde novo fenômeno,<br>
                     e de um UP em seu portfólio.</h3>
-                <p>Para apresentação de nossa rede social clique <span><a href=""> aqui</a></span>!<button class="btn-player"></button></p>
+                <p>Para apresentação de nossa rede social clique <span><a href="https://www.youtube.com/watch?v=eaHhC_PVcCE" target="_blank"> aqui</a></span>!<button class="btn-player"></button></p>
             </div>
             <img class="image-capy" src="../img/capivara.png" alt="capy">
         </div>
-
-        <div class="quem-somos">
+        <!-- Parte quem somos -->
+        <div id="somos" class="quem-somos">
             <div class="text">
                 <h1>Quem somos</h1>
                 <p>Nós somos responsáveis pela criação da futura    maior rede social do planeta, contamos com 4   Fundadores e todos estão estão empenhados para    fazer com que nossos usuários se sintão bem e com  qualquer problema consigam acesso ao nosso   suporte.</p>
             </div>
-            <div class="cards">
+            <div class="cards ">
                 <div class="card1">
                     <img src="../img/cards-quemSomos/card1.png" alt="">
                 </div>
@@ -68,12 +76,13 @@
             </div>
 
         </div>
-        <div class="diferenciais">
-            <div class="title-diferenciais">
-                <h1>Motivos pelo qual você deve optar pelo POSTCAPY</h1>
+        <!-- Nossos diferenciais -->
+        <div id="diferenciais" class="diferenciais">
+            <div class="title">
+                <h1>Motivos pelo qual você deve <br> optar pelo POSTCAPY</h1>
             </div>
             
-            <div class="card-1">
+            <div class="card-1 ">
                 <div class="text-left cards-dif text">
                     <div class="title-card1">
                     <h1>Realize <span>POSTS</span> e espere seu <span>EMPREGO </span></h1>
@@ -109,9 +118,98 @@
                     <img src="../img/cards-motivos/image3.png" alt="">
                 </div>
             </div>
+        </div>
+        <!-- Fundadores do projeto -->
+        <div id="fundadores" class="fundadores">
+            <div class="title">
+                <h1>Fundadores</h1>
+            </div>
+            <div class="cards-fund">
+
+                <div class="card-fund card-fund1">
+                    <img src="../img/cards-fundadores/folman.png" alt="">
+                    <div class="text-cent">
+                        <h2>Lucas Folman</h2>
+                        <ul>
+                            <li>Owner</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-fund card-fund2">
+                    <img src="../img/cards-fundadores/matos.png" alt="">
+                    <div class="text-cent">
+                        <div class="texts-fund">
+                            <h2>Guilherme Matos</h2>
+                            <ul>
+                                <li>Web Designer</li>
+                                <li>Owner</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-fund card-fund3">
+                    <img src="../img/cards-fundadores/rafael.png" alt="">
+                    <div class="text-cent">
+                        <h2>Rafael Leivas</h2>
+                        <ul>
+                            <li>Web Designer</li>
+                            <li>Programig</li>
+                            <li>Owner</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card-fund card-fund4">
+                    <img src="../img/cards-fundadores/marceu.png" alt="">
+                    <div class="text-cent">
+                        <h2>Marceu Signori</h2>
+                        <ul>
+                            <li>Owner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </main>
+
+    <footer>
+        <div class="footer">
+            <!-- imagem logo -->
+            <div class="elements-footer image-footer">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <!-- contatos -->
+            <div class="elements-footer contato-footer">
+                <h2>Contato</h2>
+                <h3><span>instagram</span></h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/rafae_bl/" target="_blank">rafae_bl</a></li>
+                    <li><a href="https://www.instagram.com/4.marceu/" target="_blank">4.marceu</a></li>
+                    <li><a href="https://www.instagram.com/lucas_follmannn/" target="_blank">lucas_follmannn</a></li>
+                    <li><a href="https://www.instagram.com/m4tos._/" target="_blank">m4tos</a></li>
+                </ul>
+            </div>
+            <!-- referencias -->
+            <div class="elements-footer ref-footer">
+                <h2>Programas Utilizados</h2>
+                <ul> <span>
+                    <li>Figma</li>
+                    <li>Behance</li>
+                    <li>Photoshop</li>
+                    <li>Animaker</li>
+                    </span>
+                </ul>
+            </div>
+            <!-- slogan -->
+            <div class="elements-footer slogan-footer">
+                <h1>FÉ PRA TUDO</h1>
+            </div>
+        </div>
+    </footer>
+
     <script src="../js/script.js" defer ></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 </body>

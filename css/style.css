@@ -9,9 +9,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #F6F6F6;
-    height: 4000px;
 }
 
 .header{
@@ -99,27 +102,34 @@ nav ul li a{
     display: flex;
     justify-content: space-between;
     top: 3em;
+    flex-wrap: wrap;
 }
 
 .cards div{
     background-color: #fff;
     border-radius: 23px;
-    box-shadow: #001D48 4px px 20px;
+    width: 30%;
+    margin-top: 2em;
+    flex-wrap: wrap;
 }
 
 .cards img{
+    border-radius: 23px;
     width: 100%;
     height: 100%;
+    box-shadow: #001D48 4px 4px 20px;
+
 }
 
 .diferenciais{
     background-color: #F0F6FF;
 }
 
-.title-diferenciais{
+.title{
     left: 10%;
     margin-top: 5em;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .card-1{
@@ -154,6 +164,58 @@ nav ul li a{
     color: #FF006B;
 }
 
+.cards-fund{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    align-items: center;
+    width: 100%;
+    margin-top: 5em;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.text-cent{
+    margin-top: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+.text-cent h2{
+    color: #FF006B;
+}
+
+.text-cent li{
+    list-style-type: none;
+    font-size: 20px;
+}   
+
+.cards-fund img{
+    border-radius: 100%;
+}
+
+.footer{
+    background-color: #001D48;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+    margin-top: 7em;
+    flex-wrap: wrap;
+}
+
+.footer span{
+    color: #FF006B;
+}
+
+.slogan-footer{
+    font-size: 2em;
+}
+
+.elements-footer{
+    margin-top: 2em;
+}
+
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
@@ -161,6 +223,12 @@ nav ul li a{
     .nav-item {
         display: none;
     }
+    
+    .nav-link{
+        text-decoration: none;
+        color: #fff;
+    }
+
     .btn-nav {
         display: none;
     }
@@ -219,12 +287,25 @@ nav ul li a{
         margin-right: auto; 
     }
 
+    .title{
+        left: 10%;
+        margin-top: 5em;
+        text-align: center;
+        font-size: 15px;
+
+    }
+
     .cards{
-        display: block;
         margin-top: 3em;
+        display: block;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 1em;
     }
     .cards img{
         width: 16em;
+        height: 16em;
     }
 
     .card-1{
@@ -253,5 +334,43 @@ nav ul li a{
         margin-left: auto;
         margin-right: auto; 
         margin-top: 1em;
+    }
+
+    .cards-fund{
+        display: block;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 1em;
+    }
+
+    .cards-fund img{
+        width: 16em;
+        height: 16em;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 1em;
+    }
+
+    .footer{
+        background-color: #001D48;
+        color: #fff;
+        display: block;
+        margin-top: 7em;
+    }
+
+    .contato-footer ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .slogan-footer{
+        font-size: 1em;
+    }
+
+    .elements-footer{
+        margin-top: 2em;
     }
 }
